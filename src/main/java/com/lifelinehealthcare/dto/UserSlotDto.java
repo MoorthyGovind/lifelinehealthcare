@@ -10,8 +10,8 @@ import lombok.Setter;
 public class UserSlotDto {
 
 	private LocalDate slotDate;
-	private Integer slotTimeFrom;
-	private Integer slotTimeTo;
+	private String slotTimeFrom;
+	private String slotTimeTo;
 	private String hospitalDetail;
 	private String patientName;
 	private Long patientPhoneNumber;
