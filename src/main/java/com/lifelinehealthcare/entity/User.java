@@ -31,6 +31,7 @@ public class User {
 	@Enumerated(EnumType.STRING)
 	private Role role;
 	private String category;
+	private Integer rating;
 	
 	@OneToOne(fetch = FetchType.LAZY, cascade =  CascadeType.ALL, mappedBy = "user")
     private UserDetail userDetail;

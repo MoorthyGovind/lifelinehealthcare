@@ -12,5 +12,5 @@ public class DoctorDto {
 	private String educationQualification;
 	private String categorySpecialist;
 	private Double yearsOfExperience;
-	private String feedBack;
+	private Integer rating;
 }
