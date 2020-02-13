@@ -64,6 +64,13 @@ public class UserServiceImpl implements UserService {
 		return userDetailsResponceDto;
 	}
 
+	/**
+	 * Get the doctor list based on the patient search details
+	 * 
+	 * @param searchRequestDto - Search params such as name and category
+	 * @return response of the doctor details
+	 * @author Govindasamy.C
+	 */
 	@Override
 	public List<DoctorDto> getUsersBySearchValue(SearchRequestDto searchRequestDto) {
 
@@ -78,6 +85,12 @@ public class UserServiceImpl implements UserService {
 		return avilableSlotDto;
 	}
 
+	/**
+	 * Covert the user values to doctor dto object
+	 * 
+	 * @return details of the doctor
+	 * @author Govindasamy.C
+	 */
 	private DoctorDto convertUserToDoctortDto(User user) {
 		log.info("converting the user detail to dto...");
 		DoctorDto userDto = new DoctorDto();

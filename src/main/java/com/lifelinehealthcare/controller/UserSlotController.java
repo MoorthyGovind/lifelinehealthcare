@@ -105,6 +105,16 @@ public class UserSlotController {
 		return new ResponseEntity<>(responseDto, HttpStatus.OK);
 	}
 
+	/**
+	 * confirm the booking slot by patient
+	 * @param userId - ID of the user
+	 * @param slotId - ID of the booking slot
+	 * @param requestDto - Details of the booking
+	 * @return - details of the status code and message
+	 * @throws UserNotFoundException - if user not found when giving wrong user id
+	 * @throws SlotNotFoundException - if slot not found when giving wrong slot id
+	 * @author Govindasamy
+	 */
 	@PostMapping("{userId}/slots/{slotId}")
 	public ResponseEntity<ResponseDto> confirmBookingSlot(@PathVariable Integer userId, @PathVariable Integer slotId,
 			@Valid @RequestBody BookingSlotRequestDto requestDto) throws UserNotFoundException, SlotNotFoundException {

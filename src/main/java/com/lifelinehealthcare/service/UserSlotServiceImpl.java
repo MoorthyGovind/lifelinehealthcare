@@ -222,6 +222,16 @@ public class UserSlotServiceImpl implements UserSlotService {
 		return slots;
 	}
 
+	/**
+	 * confirm the booking slot by patient
+	 * @param userId - ID of the user
+	 * @param slotId - ID of the booking slot
+	 * @param requestDto - Details of the booking
+	 * @return - details of the status code and message
+	 * @throws UserNotFoundException - if user not found when giving wrong user id
+	 * @throws SlotNotFoundException - if slot not found when giving wrong slot id
+	 * @author Govindasamy
+	 */
 	@Override
 	public void confirmBookingSlot(Integer userId, Integer slotId, BookingSlotRequestDto requestDto)
 			throws UserNotFoundException, SlotNotFoundException {

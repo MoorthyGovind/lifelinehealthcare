@@ -56,6 +56,12 @@ public class UserController {
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
+	/**
+	 * Get the doctor list based on the patient search details
+	 * @param searchRequestDto - Search params such as name and category
+	 * @return response of the doctor details
+	 * @author Govindasamy.C
+	 */
 	@PostMapping
 	public ResponseEntity<UserSearchResponseDto> getUsersBySearchValue(
 			@Valid @RequestBody SearchRequestDto searchRequestDto) {
