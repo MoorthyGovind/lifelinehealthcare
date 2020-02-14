@@ -119,6 +119,7 @@ public class UserSlotServiceImpl implements UserSlotService {
 		BeanUtils.copyProperties(userSlot.getUserSlotBook(), userSlotDto);
 		userSlotDto.setSlotTimeFrom(userSlot.getSlotTimeFrom());
 		userSlotDto.setSlotTimeTo(userSlot.getSlotTimeTo());
+		userSlotDto.setSlotId(userSlot.getUserSlotId());
 		return userSlotDto;
 	}
 

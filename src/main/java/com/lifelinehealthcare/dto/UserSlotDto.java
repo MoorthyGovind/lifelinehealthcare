@@ -9,6 +9,7 @@ import lombok.Setter;
 @Getter
 public class UserSlotDto {
 
+	private Integer slotId;
 	private LocalDate slotDate;
 	private String slotTimeFrom;
 	private String slotTimeTo;
